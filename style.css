@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #FFC0CB;
+  background: #8B4513;
   display: grid;
   place-items: center;
   height: 100vh;
@@ -15,11 +15,11 @@ body {
 }
 
 .card {
-  background: #fdfdfd;
+  background: #D2B48C;
   border-radius: 4px;
   height: 85vh;
   width: 80vw;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adjusted box shadow for depth */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adjusted box shadow for depth */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@ img.birthday {
 
 .text {
   padding: 1em;
-  color: #333; /* Adjusted text color */
+  color: #5C4033; /* Adjusted text color */
 }
 
 .muted {
