@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #8B4513;
+  background: #8b4513;
   display: grid;
   place-items: center;
   height: 100vh;
@@ -15,7 +15,7 @@ body {
 }
 
 .card {
-  background: #D2B48C;
+  background: #d2b48c;
   border-radius: 4px;
   height: 85vh;
   width: 80vw;
@@ -57,7 +57,7 @@ img.birthday {
 
 .text {
   padding: 1em;
-  color: #5C4033; /* Adjusted text color */
+  color: #5c4033; /* Adjusted text color */
 }
 
 .muted {
