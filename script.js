@@ -1,10 +1,10 @@
-const audio =
-  document.query Selector (!'audio');
+const audio = document.querySelector('audio');
+  const body = document.body;
 
-audio.addEventListerner('play' , () => {
-  body.classList.add('play-music');
-});
+  audio.addEventListener('play', () => {
+    body.classList.add('play-music');
+  });
 
-audio.addEventListerner('play' , () => {
-  body.classList.remove('play-music');
-});
+  audio.addEventListener('pause', () => {
+    body.classList.remove('play-music');
+  });
