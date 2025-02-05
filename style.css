@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"); /* Fixed Google Fonts URL typo */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
   transition: all 0.2s ease-in-out;
@@ -10,31 +10,32 @@ body {
   place-items: center;
   height: 100vh;
   margin: 0;
-  font-family: "Open Sans", sans-serif; /* Removed extra space before comma */
+  font-family: "Open Sans", sans-serif;
   color: #fff;
 }
 
 .card {
   background: #fdfdfd;
-  border-radius: 4px; /* Fixed spelling from 'boarder-radius' */
+  border-radius: 4px;
   height: 85vh;
   width: 80vw;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Added blur radius to shadow */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: column; /* Ensure column layout by default */
+  justify-content: flex-start; /* Align content to the top */
   align-items: center;
-  padding: 1em; /* Fixed 'lem' typo to '1em' */
+  padding: 1em;
   overflow: hidden;
 }
 
 img.birthday {
   max-height: 40vh;
+  margin-top: 1em; /* Add some space at the top */
 }
 
 .text {
-  padding: 1em; /* Fixed 'lem' typo to '1em' */
+  padding: 1em;
   color: #333;
 }
 
@@ -46,24 +47,24 @@ img.birthday {
   height: 100px;
 }
 
-/* Fixed media query order - from smaller to larger screens */
+/* Mobile-first approach */
 @media only screen and (min-width: 640px) {
   .card {
-    flex-direction: row-reverse;
+    flex-direction: column; /* Keep column layout for medium screens */
   }
   .card img.birthday {
-    width: 100%;
-    max-width: 50vw;
-    max-height: unset;
+    max-width: 80%; /* Adjust image width for medium screens */
+    max-height: 50vh; /* Limit height for better proportion */
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .card {
-    flex-direction: row-reverse;
+    flex-direction: column; /* Keep column layout for larger screens */
   }
   .card img.birthday {
-    max-width: 40vw; /* Adjusted for better proportion on larger screens */
+    max-width: 60%; /* Adjust image width for larger screens */
+    max-height: 50vh; /* Limit height for better proportion */
   }
 }
 
